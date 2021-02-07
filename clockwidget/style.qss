@@ -1,0 +1,23 @@
+
+
+QWidget {
+  background-color: #161616;
+}
+
+QLabel#hr {
+  color: #93ebd5;
+  font-family: Source Code Pro;
+  font-size: 70px;
+}
+
+QLabel#sep {
+  color: #00afd7;
+  font-family: Source Code Pro;
+  font-size: 70px;
+}
+
+QLabel#min {
+  color: #d5f6ff;
+  font-family: Source Code Pro;
+  font-size: 70px;
+}

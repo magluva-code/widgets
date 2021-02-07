@@ -1,0 +1,59 @@
+
+
+QWidget {
+  background-color: #161616;
+}
+
+QLabel {
+color: #d5f6ff;
+font-family: Source Code Pro;
+font-size: 14px;
+}
+
+QLabel#c_label {
+color: #00afd7;
+font-family: Source Code Pro;
+font-size: 20px;
+}
+
+QLabel#Mo {
+color: #93ebd5;
+font-family: Source Code Pro;
+font-size: 14px;
+}
+
+QLabel#Tu {
+color: #93ebd5;
+font-family: Source Code Pro;
+font-size: 14px;
+}
+
+QLabel#We {
+color: #93ebd5;
+font-family: Source Code Pro;
+font-size: 14px;
+}
+
+QLabel#Th {
+color: #93ebd5;
+font-family: Source Code Pro;
+font-size: 14px;
+}
+
+QLabel#Fr {
+color: #93ebd5;
+font-family: Source Code Pro;
+font-size: 14px;
+}
+
+QLabel#Sa {
+color: #93ebd5;
+font-family: Source Code Pro;
+font-size: 14px;
+}
+
+QLabel#Su {
+color: #93ebd5;
+font-family: Source Code Pro;
+font-size: 14px;
+}
