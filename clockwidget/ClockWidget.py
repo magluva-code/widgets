@@ -17,22 +17,26 @@ class ClockWidget(QWidget):
         minuteDisplay = time.toString('mm')
 
         self.setGeometry(100, 100, 400, 200)
-
-        self.hour = QLabel(hourDisplay)
-        self.hour.setObjectName("hr")
-        self.hour.setAlignment(Qt.AlignRight)
-        self.separator = QLabel(" : ")
-        self.separator.setObjectName("sep")
-        self.separator.setAlignment(Qt.AlignCenter)
-        self.minute = QLabel(minuteDisplay)
-        self.minute.setObjectName("min")
-        self.minute.setAlignment(Qt.AlignLeft)
+        t = "<span style=\"color:#93ebd5;\">{0}</span><span style=\"color:#00afd7;\">:</span><span style=\"color:#d5f6ff;\">{1}</span>".format(hourDisplay, minuteDisplay)
+        self.current_time = QLabel(t)
+        self.current_time.setObjectName("current_time")
+        self.current_time.setAlignment(Qt.AlignRight)
+        #self.hour = QLabel(hourDisplay)
+        #self.hour.setObjectName("hr")
+        #self.hour.setAlignment(Qt.AlignRight)
+        #self.separator = QLabel(" : ")
+        #self.separator.setObjectName("sep")
+        #self.separator.setAlignment(Qt.AlignCenter)
+        #self.minute = QLabel(minuteDisplay)
+        #self.minute.setObjectName("min")
+        #self.minute.setAlignment(Qt.AlignLeft)
 
         self.layout = QHBoxLayout()
-        self.layout.addWidget(self.hour)
-        self.layout.addWidget(self.separator)
-        self.layout.addWidget(self.minute)
         self.layout.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.current_time)
+        #self.layout.addWidget(self.hour)
+        #self.layout.addWidget(self.separator)
+        #self.layout.addWidget(self.minute)
         self.setLayout(self.layout)
 
     def timer(self):
@@ -45,8 +49,10 @@ class ClockWidget(QWidget):
         time = QDateTime.currentDateTime()
         hourDisplay = time.toString('hh')
         minuteDisplay = time.toString('mm')
-        self.hour.setText(hourDisplay)
-        self.minute.setText(minuteDisplay)
+        t = "<span style=\"color:#93ebd5;\">{0}</span><span style=\"color:#00afd7;\">:</span><span style=\"color:#d5f6ff;\">{1}</span>".format(hourDisplay, minuteDisplay)
+        self.current_time.setText(t)
+        #self.hour.setText(hourDisplay)
+        #self.minute.setText(minuteDisplay)
 
     @staticmethod
     def set_style(app, stylesheet):

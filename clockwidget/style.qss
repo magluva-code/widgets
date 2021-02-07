@@ -4,6 +4,12 @@ QWidget {
   background-color: #161616;
 }
 
+QLabel#current_time {
+  font-family: Source Code Pro;
+  font-size: 70px;
+}
+
+
 QLabel#hr {
   color: #93ebd5;
   font-family: Source Code Pro;
